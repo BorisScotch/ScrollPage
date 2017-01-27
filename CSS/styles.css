@@ -61,6 +61,8 @@ and (min-width : 321px) {
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
+.navbar-brand { display:none;
+}
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -84,6 +86,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
+
 }
 
 /* Desktops and laptops ----------- */
