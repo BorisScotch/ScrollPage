@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <title>Documento sin título</title>
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="https://use.fontawesome.com/e379886307.js"></script>
-     <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/e379886307.js"></script>
+<script src="JS/scrollhandler.js"></script>
+<link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
 
 </head>
 
@@ -30,13 +31,13 @@
     <div id="sidebar">
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-         <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
           <li><a href="#section1"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
           <li><a href="#section2"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
           <li><a href="#section3"><i class="fa fa-bus" aria-hidden="true"></i></a></li>
           <li><a href="#section4"><i class="fa fa-leaf" aria-hidden="true"></i></a></li>
-           <li><a href="#section5"><i class="fa fa-cog" aria-hidden="true"></i></a></li>  
-            </ul>
+          <li><a href="#section5"><i class="fa fa-cog" aria-hidden="true"></i></a></li>  
+        </ul>
          
         
       </div>
@@ -45,7 +46,7 @@
 </nav>    
 <!-- -----------------------------End of navbar----------------------------- -->
 <!-- -----------------------------Section 1----------------------------- -->
-<section id="home" class="container-fluid">
+<section id="home" class="container-fluid active">
  
   
 </section>
@@ -91,17 +92,14 @@
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
-
   // Add smooth scrolling on all links inside the navbar
   $("#myNavbar a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
