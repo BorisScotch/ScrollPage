@@ -6,14 +6,14 @@ body {
 
 #home {
 	padding-top:50px;
-	height:960px;
+	
 	color: #fff; 
 	background-color: #000000;
 	padding-right: 0px;
     padding-left: 0px;
 }
  section {
-height: 100vh;	 
+height: 100vh !important;	 
 }
 #section1 {
 	padding-top:50px;
