@@ -6,6 +6,8 @@
 
     /* handle the mousewheel event together with 
      DOMMouseScroll to work on cross browser */
+	 //target the entire page, and listen for touch events
+
     $(document).on('mousewheel DOMMouseScroll', function (e) {
         e.preventDefault();//prevent the default mousewheel scrolling
         var active = $('section.active');
@@ -58,4 +60,44 @@
 
         }
     });
-
+	$('html, body').on('touchstart touchmove', function(e){ 
+     //prevent native touch activity like scrolling
+     scroll = true; 
+});
+	
+$(function() {
+  $(".home").click(function() {
+	$('section').removeClass('active')
+    $("#home").addClass('active');
+  });
+});	
+$(function() {
+  $(".section1").click(function() {
+	$('section').removeClass('active')
+    $("#section1").addClass('active');
+  });
+});	
+$(function() {
+  $(".section2").click(function() {
+	$('section').removeClass('active')
+    $("#section2").addClass('active');
+  });
+});	
+$(function() {
+  $(".section3").click(function() {
+	$('section').removeClass('active')
+    $("#section3").addClass('active');
+  });
+});	
+$(function() {
+  $(".section4").click(function() {
+	$('section').removeClass('active')
+    $("#section4").addClass('active');
+  });
+});	
+$(function() {
+  $(".section5").click(function() {
+	$('section').removeClass('active')
+    $("#section5").addClass('active');
+  });
+});	
