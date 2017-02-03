@@ -101,3 +101,6 @@ $(function() {
     $("#section5").addClass('active');
   });
 });	
+ $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
