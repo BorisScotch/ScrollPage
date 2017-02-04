@@ -1,10 +1,14 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script>
+      window.sr = ScrollReveal();
+    </script>
 <meta charset="utf-8">
 <title>Anuario</title>
 
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,11 +21,11 @@
 
 </head>
 <script>
- $('#mynavbar a').click(function(){
-    $("#mynavbar").collapse('hide');
+ $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
 });
  </script>
- <script>
+<script>
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
@@ -46,7 +50,8 @@ $(document).ready(function(){
   });
 });
 </script>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50"><!---->
 <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -84,27 +89,35 @@ $(document).ready(function(){
     <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example" data-slide-to="1"></li>
     <li data-target="#carousel-example" data-slide-to="2"></li>
+    <li data-target="#carousel-example" data-slide-to="3"></li>
   </ol>
 
   <div class="carousel-inner">
     <div class="item active">
-      <a href="#"><img src="castelmezzano_at_night_italy-wallpaper-1920x1080.jpg"/></a>
+      <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/castelmezzano_at_night_italy-wallpaper-1920x1080.jpg"/>
       <div class="carousel-caption">
         <h3>Opcion 1 carousel</h3>
         <p>Texto dentro del carousel 1</p>
       </div>
     </div>
     <div class="item">
-      <a href="#"><img src="vasco_da_gama_bridge_lisbon_portugal_at_sunrise-wallpaper-1920x1080.jpg" /></a>
+     <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/vasco_da_gama_bridge_lisbon_portugal_at_sunrise-wallpaper-1920x1080.jpg" />
       <div class="carousel-caption">
         <h3>Opcion 2 carousel</h3>
         <p>Texto dentro del carousel 2</p>
       </div>
     </div>
-    <div class="item">
-      <a href="#"><img src="guitar_34-wallpaper-1920x1080.jpg" /></a>
+     <div class="item">
+     <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/vasco_da_gama_bridge_lisbon_portugal_at_sunrise-wallpaper-1920x1080.jpg" />
       <div class="carousel-caption">
-        <h3>Opcion 3 carouse</h3>
+        <h3>Opcion 3 carousel</h3>
+        <p>Texto dentro del carousel 2</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/guitar_34-wallpaper-1920x1080.jpg" />
+      <div class="carousel-caption">
+        <h3>Opcion 4 carouse</h3>
         <p>Texto dentro del carousel 3</p>
       </div>
     </div>
@@ -129,19 +142,19 @@ $(document).ready(function(){
   </div>
   </div>
   <div class="titulos"><h1>Institucional </h1></div>
- <div class="col-md-6"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
+ <div class="col-md-6 fooleft"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 </div></div>
-   <div class="col-md-3"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
+   <div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
 
-<div class="col-md-3"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras">
+<div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras">
 
 <div id="text-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
@@ -183,15 +196,15 @@ $(document).ready(function(){
 
 
  
- <div class="col-md-3"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
+ <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
- <div class="col-md-3"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
+ <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
-<div class="col-md-6"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
+<div class="col-md-6 fooright"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
@@ -251,7 +264,35 @@ $(document).ready(function(){
 </section>
 <!-- -----------------------------END Section 5----------------------------- -->
 
+<script>
+var fooleftReveal = {
+  distance : '250px',
+  easing   : 'ease-in-out',
+  reset: true,
+  origin: 'left'
+};
+var foorightReveal = {
+  distance : '250px',
+  easing   : 'ease-in-out',
+  reset: true,
+  origin: 'right'
+};
+var circleReveal = {
+  rotate: { x: 0, y: 0, z: 360 },
+  duration: 1300,
+  scale: 2,
+  reset: true,
+  delay: 300,
+};
 
-
+sr.reveal('.fooleft', fooleftReveal);
+sr.reveal('.fooleft', fooleftReveal);
+sr.reveal('.fooleft', fooleftReveal);
+sr.reveal('.fooright', foorightReveal);
+sr.reveal('.fooright', foorightReveal);
+sr.reveal('.fooright', foorightReveal);
+sr.reveal('.circle', circleReveal);
+sr.reveal('.titulos');
+</script>
 </body>
 </html>
