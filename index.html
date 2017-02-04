@@ -232,8 +232,7 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
    </div>
    </div>   
    <div class="titulos"><h1>La SS en números</h1></div>
-  
-  
+   
 </section>
 <!-- -----------------------------END Section 2----------------------------- -->
 <div class="parallax-window parallaxone" data-parallax="scroll"></div>
@@ -288,33 +287,31 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 <!-- -----------------------------END Section 5----------------------------- -->
 
 <script>
-var fooleftReveal = {
-  distance : '250px',
-  easing   : 'ease-in-out',
-  reset: true,
-  origin: 'left'
-};
-var foorightReveal = {
-  distance : '250px',
-  easing   : 'ease-in-out',
-  reset: true,
-  origin: 'right'
-};
 var circleReveal = {
-  rotate: { x: 0, y: 0, z: 360 },
-  duration: 1300,
-  scale: 2,
-  reset: true,
-  delay: 300,
+  
 };
 
-sr.reveal('.fooleft', fooleftReveal);
-sr.reveal('.fooleft', fooleftReveal);
-sr.reveal('.fooleft', fooleftReveal);
-sr.reveal('.fooright', foorightReveal);
-sr.reveal('.fooright', foorightReveal);
-sr.reveal('.fooright', foorightReveal);
-sr.reveal('.circle', circleReveal);
+sr.reveal('.fooleft', {
+	distance : '250px',
+	easing   : 'ease-in-out',
+	reset: true,
+	origin: 'left',
+	duration: 1000,
+}, 200);
+sr.reveal('.fooright', 
+{distance : '250px',
+	easing   : 'ease-in-out',
+	reset: true,
+	origin: 'right',
+	duration: 1000,
+},200);
+sr.reveal('.circle',{
+	rotate: { x: 0, y: 0, z: 360 },
+	duration: 1000,
+	scale: 2,
+	reset: true,
+	delay: 300,}
+);
 sr.reveal('.titulos');
 </script>
 </body>
