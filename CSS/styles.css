@@ -1,12 +1,11 @@
-body {
+/*body {
       position: relative; 
 	height: 100%;
-	/* overflow:hidden;*/
+	
   }
-
+*/
 #home {
 	padding-top:50px;
-	
 	color: #fff; 
 	background-color: #000000;
 	padding-right: 0px;
