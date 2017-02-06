@@ -52,11 +52,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
-$('a').click(function(){
-    $('#home').hide();
-});
-</script>
+
 <body>
 <div class="overflowWrap"><!-- data-spy="scroll" data-target=".navbar" data-offset="50"-->
 <!-- Navbar -->
@@ -289,7 +285,8 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
   
 </section>
 <!-- -----------------------------END Section 4----------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"></div>
+<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
+<p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p></div></div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_2d71dda622a5480eb2cb85117c63a964~mv2_d_3000_1684_s_2.jpg/v1/fill/w_1402,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_2d71dda622a5480eb2cb85117c63a964~mv2_d_3000_1684_s_2.webp'});
 </script>
@@ -334,6 +331,7 @@ sr.reveal('.titulos', {reset: true,});
 sr.reveal('.titulos1', {reset: true,delay: 250,duration:1000,easing: 'ease-in-out',});
 sr.reveal('.titulos2', {reset: true, origin: 'left', distance: '500px',duration:1000, delay: 250,duration:1000,});
 sr.reveal('.titulos3', {easing: 'ease-in-out', reset: true,	origin:'right', distance: '500px', duration:1000, delay: 500,});
+sr.reveal('.titulos4', {easing: 'ease-in-out', reset: true,	origin:'right', distance: '500px', duration:2000, delay: 500, rotate: { x: 0, y: 0, z: 180 },},600);
 </script></body>
 </body>
 </html>
