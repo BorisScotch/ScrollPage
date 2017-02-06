@@ -13,6 +13,7 @@
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+<link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="JS/parallax.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -21,11 +22,11 @@
 
 
 </head>
-<script>
+<!--<script>
  $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
- </script>
+ </script>-->
 <script>
 $(document).ready(function(){
   // Add scrollspy to <body>
@@ -56,7 +57,8 @@ $('a').click(function(){
     $('#home').hide();
 });
 </script>
-<body><!-- data-spy="scroll" data-target=".navbar" data-offset="50"-->
+<body>
+<div class="overflowWrap"><!-- data-spy="scroll" data-target=".navbar" data-offset="50"-->
 <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -147,43 +149,54 @@ $('a').click(function(){
   </div>
   </div>
   <div class="titulos"><h1>Institucional </h1></div>
- <div class="col-md-6 fooleft"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
+ <div class="col-md-6 fooleft"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
-</div></div>
-   <div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
-<p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
-<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
-<p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
 
-<div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras">
+</div></div>
+   <div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
+<p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
+<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
+<p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la </p></div></div>
+
+<div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade">
 
 <div id="text-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="row">
-        <div class="col-xs-12">
-            <div class="carousel-inner">
+        <div class="col-xs-12"><ol class="carousel-indicators2 carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+  </ol>
+            <div class="carousel-inner" id="carousel-example">
                 <div class="item active">
                     <div class="carousel-content">
                         <div>
-                            <p> mo explicabo sit blanditiis laborum dolore ill nemo explicabo sit blanditiis laborum dolore illum fuga veniam nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
+                           <h3>
+                        laborum dolore</h3>
+                            <p>explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="carousel-content">
                         <div>
-                            <p>mo explicabo sit blanditiis laborum dolore ill nemo explicabo sit blanditiis laborum dolore illum fuga veniam nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
+                           <h3>
+                        laborum dolore</h3>
+                            <p>explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="carousel-content">
                         <div>
-                            <p>mo explicabo sit blanditiis laborum dolore ill nemo explicabo sit blanditiis laborum dolore illum fuga veniam nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
+                        <h3>
+                        laborum dolore</h3>
+                            <p>explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat? Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus   </p>
                         </div>
                     </div>
                 </div>            
@@ -201,25 +214,26 @@ $('a').click(function(){
 
 
  
- <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
+ <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
-<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
-<p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
- <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras"><p>Trabajamos por la democracia y la transparencia.</p>
+<p>La independencia de los poderes también requiere una buena comunicación entre ellos:  </p>
+</div></div>
+ <div class="col-md-3 fooright"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
-<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
-<p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p></div></div>
-<div class="col-md-6 fooright"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos"><p>Trabajamos por la democracia y la transparencia.</p>
+<p>La independencia de los poderes también requiere una buena comunicación entre ellos:  </p>
+</div></div>
+<div class="col-md-6 fooright"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
-<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
-<p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
+<p>La independencia de los poderes también requiere una buena comunicación entre ellos:</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 </div></div>
   
 </section>
 <!-- -----------------------------END Section 1----------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"></div>
+<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
+<p class="titulos1" style="">Ejemplo de frase dentro del parallax photo</p>
+</div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_4de60eb79c674b29aff595e17ef27ed6~mv2_d_2736_1536_s_2.jpg/v1/fill/w_1402,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_4de60eb79c674b29aff595e17ef27ed6~mv2_d_2736_1536_s_2.webp'});
 </script>
@@ -235,7 +249,10 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
    
 </section>
 <!-- -----------------------------END Section 2----------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"></div>
+<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
+<p class="titulos2">Ejemplo de frase dentro del parallax photo</p>
+<p class="titulos3">Ejemplo de frase dentro del parallax photo</p>
+</div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_e0d17e65d4524c66aebe5e2dbbcda1c6~mv2_d_3000_1684_s_2.jpg/v1/fill/w_1402,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_e0d17e65d4524c66aebe5e2dbbcda1c6~mv2_d_3000_1684_s_2.webp'});
 </script>
@@ -251,7 +268,10 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
  
 </section>
 <!-- -----------------------------END Section 3----------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"></div>
+<div class="parallax-window parallaxone" data-parallax="scroll">
+<div style="height:25vh"></div>
+<p class="titulos1">Ejemplo de frase dentro del parallax photo</p></div>
+</div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_57b0e2786c5c4ad889bc4d95a504a529~mv1.jpg/v1/fill/w_1181,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_57b0e2786c5c4ad889bc4d95a504a529~mv1.webp'});
 </script>
@@ -287,9 +307,7 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 <!-- -----------------------------END Section 5----------------------------- -->
 
 <script>
-var circleReveal = {
-  
-};
+
 
 sr.reveal('.fooleft', {
 	distance : '250px',
@@ -297,14 +315,14 @@ sr.reveal('.fooleft', {
 	reset: true,
 	origin: 'left',
 	duration: 1000,
-}, 200);
+}, 350);
 sr.reveal('.fooright', 
 {distance : '250px',
 	easing   : 'ease-in-out',
 	reset: true,
 	origin: 'right',
 	duration: 1000,
-},200);
+},350);
 sr.reveal('.circle',{
 	rotate: { x: 0, y: 0, z: 360 },
 	duration: 1000,
@@ -312,7 +330,10 @@ sr.reveal('.circle',{
 	reset: true,
 	delay: 300,}
 );
-sr.reveal('.titulos');
-</script>
+sr.reveal('.titulos', {reset: true,});
+sr.reveal('.titulos1', {reset: true,delay: 250,duration:1000,easing: 'ease-in-out',});
+sr.reveal('.titulos2', {reset: true, origin: 'left', distance: '500px',duration:1000, delay: 250,duration:1000,});
+sr.reveal('.titulos3', {easing: 'ease-in-out', reset: true,	origin:'right', distance: '500px', duration:1000, delay: 500,});
+</script></body>
 </body>
 </html>
