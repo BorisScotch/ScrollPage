@@ -75,11 +75,11 @@ $('a').click(function(){
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a class="home" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          <li><a class="section1" href="#section1"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-          <li><a class="section2" href="#section2"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
-          <li><a class="section3" href="#section3"><i class="fa fa-bus" aria-hidden="true"></i></a></li>
-          <li><a class="section4" href="#section4"><i class="fa fa-leaf" aria-hidden="true"></i></a></li>
-          <li><a class="section5" href="#section5"><i class="fa fa-cog" aria-hidden="true"></i></a></li>  
+          <li><a class="section1" href="#section1"><i class="fa fa-heart" aria-hidden="true"></i> Institucional</a></li>
+          <li><a class="section2" href="#section2"><i class="fa fa-bar-chart" aria-hidden="true"></i> La SS en números</a></li>
+          <li><a class="section3" href="#section3"><i class="fa fa-bus" aria-hidden="true"></i> Construcción Colectiva</a></li>
+          <li><a class="section4" href="#section4"><i class="fa fa-leaf" aria-hidden="true"></i> Mejorando nuestras instituciones</a></li>
+          <li><a class="section5" href="#section5"><i class="fa fa-cog" aria-hidden="true"></i> Trabajo con la comunidad</a></li>  
         </ul>
          
         
@@ -88,7 +88,7 @@ $('a').click(function(){
   </div>
 </nav>    
 <!-- -----------------------------End of navbar----------------------------- -->
-<!-- -----------------------------Section 1----------------------------- -->
+<!-- -----------------------------Section home----------------------------- -->
 <section id="home" class="container-fluid active">
  
 <div id="carousel-example" class="carousel slide" data-ride="carousel">
@@ -101,28 +101,28 @@ $('a').click(function(){
 
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/castelmezzano_at_night_italy-wallpaper-1920x1080.jpg"/>
+      <img src="imagenes/E67A1984.JPG"/>
       <div class="carousel-caption">
         <h3>Opcion 1 carousel</h3>
         <p>Texto dentro del carousel 1</p>
       </div>
     </div>
     <div class="item">
-     <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/vasco_da_gama_bridge_lisbon_portugal_at_sunrise-wallpaper-1920x1080.jpg" />
+     <img src="imagenes/DSC_1595.JPG" />
       <div class="carousel-caption">
         <h3>Opcion 2 carousel</h3>
         <p>Texto dentro del carousel 2</p>
       </div>
     </div>
      <div class="item">
-     <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/vasco_da_gama_bridge_lisbon_portugal_at_sunrise-wallpaper-1920x1080.jpg" />
+     <img src="imagenes/E67A6121.JPG" />
       <div class="carousel-caption">
         <h3>Opcion 3 carousel</h3>
         <p>Texto dentro del carousel 2</p>
       </div>
     </div>
     <div class="item">
-      <img src="https://raw.githubusercontent.com/BorisScotch/ScrollPage/master/guitar_34-wallpaper-1920x1080.jpg" />
+      <img src="imagenes/tapa1.JPG" />
       <div class="carousel-caption">
         <h3>Opcion 4 carouse</h3>
         <p>Texto dentro del carousel 3</p>
@@ -139,7 +139,7 @@ $('a').click(function(){
 </div> 
   
 </section>
-<!-- -----------------------------END Section 1----------------------------- -->
+<!-- -----------------------------END Section home----------------------------- -->
 <!-- -----------------------------Section 1----------------------------- -->
 <section id="section1" class="container-fluid">
  
@@ -148,7 +148,7 @@ $('a').click(function(){
   <i style="padding:20px" class="fa fa-heart" aria-hidden="true"></i> 
   </div>
   </div>
-  <div class="titulos"><h1>Institucional </h1></div>
+  <div class="titulos"><h1>Institucional</h1></div>
  <div class="col-md-6 fooleft"><div id="textosinstitucional" class="col-md-12 sombras cuadrosdetextos hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos: promovemos el vínculo entre la legislatura y el poder ejecutivo. </p>
@@ -235,6 +235,7 @@ $('a').click(function(){
 <p class="titulos1" style="">Ejemplo de frase dentro del parallax photo</p>
 </div>
 <script>
+
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_4de60eb79c674b29aff595e17ef27ed6~mv2_d_2736_1536_s_2.jpg/v1/fill/w_1402,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_4de60eb79c674b29aff595e17ef27ed6~mv2_d_2736_1536_s_2.webp'});
 </script>
 <!-- -----------------------------Section 2----------------------------- -->
@@ -307,8 +308,6 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 <!-- -----------------------------END Section 5----------------------------- -->
 
 <script>
-
-
 sr.reveal('.fooleft', {
 	distance : '250px',
 	easing   : 'ease-in-out',
@@ -323,6 +322,7 @@ sr.reveal('.fooright',
 	origin: 'right',
 	duration: 1000,
 },350);
+
 sr.reveal('.circle',{
 	rotate: { x: 0, y: 0, z: 360 },
 	duration: 1000,
