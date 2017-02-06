@@ -3,35 +3,44 @@ body {
 	height: 100%;
 	/* overflow:hidden;*/
 	overflow-x: hidden; 
+	width:100%
   }
+  .overflowWrap {
+overflow-x: hidden;
+}
 
 #home {
-	padding-top:50px;
-	
+	padding:50px 0 0 0;
 	color: #fff; 
 	background-color: #000000;
-	padding-right: 0px;
-    padding-left: 0px;
 }
  section {
-	height: 100vh;	
+	height: 100%;	
 	color: #fff;
-	padding-top:50px;
+	padding:50px 0px 50px 0px;
 }
 #section1 {
 	background-color: #1E88E5;
+		height:100vh;
+
 }
 #section2 {
 	background-color: #673ab7;
+	height:100vh;
 }
 #section3 {
 	background-color: #ff9800;
+		height:100vh;
+
 }
 #section4 {
 	  background-color: #00bcd4;
+	  	height:100vh;
+
 }
 #section5 {
-	background-color: #009688;
+	background-color: #009688;	height:100vh;
+
 }
 .navbar-inverse {
 	background-color: #060	
@@ -44,7 +53,12 @@ body {
 	font-size:60px;
 	text-align:center;
 	padding-top: 10px;
+	
 }
+.grid:hover {
+	background-image:url(../../01_pedidos%20de%20dise%C3%B1o/overlay.png)}
+	.grid{
+	background-image:none}
 .circle{ 
 	width:100px;
 	height:100px;
@@ -57,6 +71,39 @@ body {
 }
 .titulos {
 	text-align:center;
+    text-shadow: 2px 2px 4px #000000;
+}.titulos1 {
+	text-align:center;
+    text-shadow: 2px 2px 4px #000000;
+	text-align:center; 
+	margin: 0 auto; 
+	font-size:150px; 
+	color:white;
+}
+
+.titulos2 {
+    text-shadow: 2px 2px 6px #000000;
+	text-align:center; 
+	margin: 0 auto; 
+	font-size:120px; 
+	color:white;
+}
+.titulos3 {
+    text-shadow: 2px 2px 6px #000000;
+	text-align:center; 
+	margin: 0 auto; 
+	font-size:70px; 
+	color:white;
+}
+.titulos4 {
+	text-align:center;
+    text-shadow: 2px 2px 6px #000000;
+	font-size:150px; 
+	color:white;
+}
+.textocarouselcontrast{
+	background-color:white;
+	color:#0268c2;
 }
 .cuadrosdetextos {
 	padding:15px 0px 5px 0px;
@@ -64,9 +111,32 @@ body {
 #textosinstitucional {
 	background-color:#0268c2;
 }
+#textosinstitucional:hover {
+	background-color:#1E88E5;
+	-webkit-transform: scale(1.1);
+    transform: scale(1.03);
+}
+.hvr-border-fade {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+   -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #1E88E5, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+  box-shadow: inset 0 0 0 4px white, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+}
 .carousel-content {
     display:flex;
     align-items:center;
+}
+.carousel-indicators2 {
+	bottom: 90%  !important;
 }
 
 #text-carousel {
@@ -78,16 +148,11 @@ body {
     background-image: none !important;
 }
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-	margin:5px 0px !important;
+	margin:10px 0px !important;
 }
-.section1:focus ~ #carousel-example {
-  display: none;
-}
-.home:focus ~ #carousel-example {
-  display: block;
-}
+
 .parallax-window {
-    min-height: 600px;
+    min-height: 100vh;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -154,6 +219,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
+.carousel-indicators2 {
+    bottom: 90% !important;
 
 }
 
