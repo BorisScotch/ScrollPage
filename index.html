@@ -10,10 +10,12 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Anuario oficial del la Subsecretaria de Reforma Política y Asuntos Legislativos del Gobierno de la Ciudad de Buenos Aires, Argentina. Información general, misión, estadisticas.">
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
 <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="JS/parallax.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,8 +25,12 @@
 
 </head>
 <script>
- $('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
+ $(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
 });
  </script>
 <script>
@@ -40,10 +46,10 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function(){
+      }, 1000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -69,17 +75,15 @@ $(document).ready(function(){
     </div>
     <div id="sidebar">
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a class="home" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          <li><a class="section1" href="#section1"><i class="fa fa-heart" aria-hidden="true"></i> Institucional</a></li>
-          <li><a class="section2" href="#section2"><i class="fa fa-bar-chart" aria-hidden="true"></i> La SS en números</a></li>
-          <li><a class="section3" href="#section3"><i class="fa fa-bus" aria-hidden="true"></i> Construcción Colectiva</a></li>
-          <li><a class="section4" href="#section4"><i class="fa fa-leaf" aria-hidden="true"></i> Mejorando nuestras instituciones</a></li>
-          <li><a class="section5" href="#section5"><i class="fa fa-cog" aria-hidden="true"></i> Trabajo con la comunidad</a></li>  
+        <ul class="nav navbar-nav pull-right">
+          <li class="home"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> <b>Inicio</b></a></li>
+          <li class="section1"><a href="#section1"><i class="fa fa-heart" aria-hidden="true"></i> <b> Institucional</b></a></li>
+          <li class="section2"><a href="#section2"><i class="fa fa-bar-chart" aria-hidden="true"></i> <b> Números</b></a></li>
+          <li class="section3"><a href="#section3"><i class="fa fa-bus" aria-hidden="true"></i> <b> Construcción</b></a></li>
+          <li class="section4"><a href="#section4"><i class="fa fa-leaf" aria-hidden="true"></i> <b> Instituciones</b></a></li>
+          <li class="section5"><a href="#section5"><i class="fa fa-cog" aria-hidden="true"></i> <b> Comunidad</b></a></li>  
         </ul>
-         
-        
-      </div>
+         </div>
     </div>
   </div>
 </nav>    
@@ -206,11 +210,10 @@ $(document).ready(function(){
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-</div></div>
+</div>
+</div>
 
-
- 
- <div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
+<div class="col-md-3 fooleft"><div id="textosinstitucional" class="col-md-12 cuadrosdetextos sombras hvr-border-fade"><h3>Trabajamos por la democracia y la transparencia.</h3>
 <p>El pueblo es siempre soberano, especialmente en las elecciones. Fortalecemos las instituciones electorales y la formación de los ciudadanos en materia cívica y electoral.</p>
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos:  </p>
 </div></div>
@@ -223,7 +226,8 @@ $(document).ready(function(){
 <p>La independencia de los poderes también requiere una buena comunicación entre ellos:</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
 <p>Los ciudadanos son los dueños de la información, por eso impulsamos la transparencia y el acceso a la información pública.</p>
-</div></div>
+</div>
+</div>
   
 </section>
 <!-- -----------------------------END Section 1----------------------------- -->
@@ -236,14 +240,12 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 </script>
 <!-- -----------------------------Section 2----------------------------- -->
 <section id="section2" class="container-fluid">
-
    <div class="iconos">
    <div class="circle sombras">
    <i style="padding:20px" class="fa fa-bar-chart" aria-hidden="true"></i> 
    </div>
    </div>   
    <div class="titulos"><h1>La SS en números</h1></div>
-   
 </section>
 <!-- -----------------------------END Section 2----------------------------- -->
 <div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
@@ -266,8 +268,9 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 </section>
 <!-- -----------------------------END Section 3----------------------------- -->
 <div class="parallax-window parallaxone" data-parallax="scroll">
-<div style="height:25vh"></div>
-<p class="titulos1">Ejemplo de frase dentro del parallax photo</p></div>
+<div style="height:25vh">
+</div>
+<p class="titulos1">Ejemplo de frase dentro del parallax photo</p>
 </div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_57b0e2786c5c4ad889bc4d95a504a529~mv1.jpg/v1/fill/w_1181,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_57b0e2786c5c4ad889bc4d95a504a529~mv1.webp'});
@@ -286,7 +289,8 @@ $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7
 </section>
 <!-- -----------------------------END Section 4----------------------------- -->
 <div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
-<p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p><p class="titulos4 col-md-4">Ejemplo de frase dentro del parallax photo</p></div></div>
+<p class="titulos1">Ejemplo de frase dentro del parallax photo</p>
+</div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'https://static.wixstatic.com/media/1999e7_2d71dda622a5480eb2cb85117c63a964~mv2_d_3000_1684_s_2.jpg/v1/fill/w_1402,h_787,al_c,q_90,usm_0.66_1.00_0.01/1999e7_2d71dda622a5480eb2cb85117c63a964~mv2_d_3000_1684_s_2.webp'});
 </script>
@@ -319,19 +323,20 @@ sr.reveal('.fooright',
 	origin: 'right',
 	duration: 1000,
 },350);
-
 sr.reveal('.circle',{
-	rotate: { x: 0, y: 0, z: 360 },
-	duration: 1000,
-	scale: 2,
+	rotate: { x: 0, y: 0, z: 540 },
+	duration: 2000,
+	scale: 0.1,
 	reset: true,
-	delay: 300,}
+	easing: 'ease-in-out',
+	}
 );
 sr.reveal('.titulos', {reset: true,});
 sr.reveal('.titulos1', {reset: true,delay: 250,duration:1000,easing: 'ease-in-out',});
 sr.reveal('.titulos2', {reset: true, origin: 'left', distance: '500px',duration:1000, delay: 250,duration:1000,});
 sr.reveal('.titulos3', {easing: 'ease-in-out', reset: true,	origin:'right', distance: '500px', duration:1000, delay: 500,});
 sr.reveal('.titulos4', {easing: 'ease-in-out', reset: true,	origin:'right', distance: '500px', duration:2000, delay: 500, rotate: { x: 0, y: 0, z: 180 },},600);
-</script></body>
+</script>
+</body>
 </body>
 </html>
