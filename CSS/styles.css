@@ -408,3 +408,57 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
+/*CHALET IMPLEMENTACION MANUAL DE MARCA 2016*/
+@font-face {
+	font-family: "CHANEWEI";
+	src: url("fonts/CHANEWEI.eot");
+	src: url("fonts/CHANEWEI.eot?#iefix") format("embedded-opentype"), 
+	url("fonts/CHANEWEI.svg#CHANEWEI") format("svg"), 
+	url("fonts/CHANEWEI.woff") format("woff"), 
+	url("fonts/CHANEWEI.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("fonts/opensans-regular.eot");
+	src: url("fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), 
+	url("fonts/opensans-regular.svg#ChaletBook") format("svg"), 
+	url("fonts/opensans-regular.woff") format("woff"), 
+	url("fonts/opensans-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("fonts/opensans-bold.eot");
+	src: url("fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), 
+	url("fonts/opensans-bold.svg#ChaletBook") format("svg"), 
+	url("fonts/opensans-bold.woff") format("woff"), 
+	url("fonts/opensans-bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: bold; 
+}
+
+h1, h2, h3{
+	font-family: "CHANEWEI", Helvetica, Arial, sans-serif !important;
+	letter-spacing: -0.0px !important;
+	/*line-height: 55px !important;*/
+	line-height: initial !important;
+}
+
+h4{
+	font-family: "OpenSans", Helvetica, Arial, sans-serif !important;
+	font-weight: bold;
+	letter-spacing: -0.0px !important;
+	/*line-height: 55px !important;*/
+	line-height: initial !important;
+}
+h5, h6, .panel-title, .btn, .input-xl {
+	font-family: "OpenSans", Helvetica, Arial, sans-serif !important;
+	font-weight: normal;
+	letter-spacing: -0.0px !important;
+	font-weight:bold !important;
+}
