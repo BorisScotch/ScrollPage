@@ -58,25 +58,26 @@ section {
 	padding:59px 0px 50px 0px;
 }
 #section1 {
-	background-color: #1E88E5;
+	background-color: #3cb5b1;
 
 }
 #section2 {
-	background-color: #673ab7;
+	background-color: #d13f34;
 	height:100vh;
 }
 #section3 {
-	background-color: #ff9800;
+	background-color: #ff9624;
 	height:100vh;
 
 }
 #section4 {
-	background-color: #00bcd4;
+	background-color: #9bc12b;
 	height:100vh;
 
 }
 #section5 {
-	background-color: #009688;	height:100vh;
+	background-color: #9c43a3;	
+	height:100vh;
 
 }
 .navbar-inverse {
@@ -180,11 +181,11 @@ section {
 	padding:15px 0px 5px 0px;
 }
 #textosinstitucional {
-	background-color:#0268c2;
+	background-color:#00a59d;
 	border-radius:10px;
 }
 #textosinstitucional:hover {
-	background-color:#1E88E5;
+	background-color:#3cb5b1;
 	-webkit-transform: scale(1.1);
     transform: scale(1.03);
 }
@@ -195,7 +196,7 @@ section {
 	transition-duration: 0.3s;
 	-webkit-transition-property: box-shadow;
 	transition-property: box-shadow;
-	box-shadow: inset 0 0 0 4px #0268c2, 0 0 1px transparent;
+	box-shadow: inset 0 0 0 4px #00a59d, 0 0 1px transparent;
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
