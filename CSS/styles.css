@@ -22,9 +22,27 @@ body {
 .nav a:hover i {
     display: block;
 }
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+	color:#757575 !important;	
+}
 .home {
 	text-align:center;
 	width:68px;	
+}
+.active.section1 a{
+    color: #00a59d !important;
+}
+.active.section2 a{
+    color: #d13f34 !important;
+}
+.active.section3 a{
+    color: #ff9624 !important;
+}
+.active.section4 a{
+    color: #9bc12b !important;
+}
+.active.section5 a{
+    color: #9c43a3 !important;
 }
 .section1 {
 	text-align:center;
