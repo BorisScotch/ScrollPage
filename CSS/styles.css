@@ -44,6 +44,12 @@ body {
 .active.section5 a{
     color: #9c43a3 !important;
 }
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color:#000	 !important;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color:white !important;	
+}
 .section1 {
 	text-align:center;
 	width:116px;	
@@ -298,6 +304,12 @@ and (max-device-width : 480px) {
 .parallax-window {
 	display:none;
 }
+.nav>li>a {
+    padding: 8px 0px !important; 	
+}
+.logo {
+	margin-left:5px;
+}
 }
 /* Smartphones (landscape) ----------- */
 @media only screen 
@@ -356,6 +368,12 @@ section {
 .parallax-window {
 	display:none;
 }
+.nav>li>a {
+    padding: 8px 0px !important; 	
+}
+.logo {
+	margin-left:5px;
+}
 @media only screen 
 and (max-width : 560px) {
 /* Styles */
@@ -406,6 +424,12 @@ section {
 }
 .parallax-window {
 	display:none;
+}
+.nav>li>a {
+    padding: 8px 0pxm !important; 	
+}
+.logo {
+	margin-left:5px;
 }
 }
 /* iPads (portrait and landscape) ----------- */
