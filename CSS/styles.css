@@ -17,7 +17,7 @@ body {
     color: #fff;
 }
 .nav a:hover b {
-    display: none;
+    color:#646464;
 }
 .nav a:hover i {
     display: block;
@@ -30,16 +30,16 @@ body {
 	width:68px;	
 }
 .active.section1 a{
-    color: #00a59d !important;
+    color: #57937b !important;
 }
 .active.section2 a{
-    color: #d13f34 !important;
+    color: #d0435d !important;
 }
 .active.section3 a{
-    color: #ff9624 !important;
+    color: #14638e !important;
 }
 .active.section4 a{
-    color: #9bc12b !important;
+    color: #dba942 !important;
 }
 .active.section5 a{
     color: #9c43a3 !important;
@@ -52,27 +52,22 @@ body {
 }
 .section1 {
 	text-align:center;
-	width:116px;	
 }
 .section2 {
 	text-align:center;
-	width:91px;	
 }
 .section3 {
 	text-align:center;
-	width:123px;	
 }
 .section4 {
 	text-align:center;
-	width:120px;	
 }
 .section5 {
 	text-align:center;
-	width:109px;	
 }
 
 #home {
-	padding:50px 0 0 0;
+	padding:33px 0 0 0;
 	color: #fff; 
 	background-color: #000000;
 }
@@ -82,25 +77,53 @@ section {
 	padding:59px 0px 50px 0px;
 }
 #section1 {
-	background-color: #3cb5b1;
+	background-color: #57927b;
+	background-image: url(../imagenes/seccion-1-puntitosfoot.png),radial-gradient(#6dac93,#365b4d );
+	background-position:center bottom;
+	background-repeat:no-repeat;
 
 }
 #section2 {
-	background-color: #d13f34;
-	height:100vh;
+/*	background-color: #c33f58; !important; /* Old browsers */ 
+	background-color: -moz-radial-gradient(letf, #a23449 0%, #c33f58 100%) !important; /* FF3.6-15 */
+	background-color: -webkit-radial-gradient(letf, #a23449 0%, #c33f58 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background-color: linear-radial(letf, #a23449 0%,#c33f58 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:0 !important;
+	overflow:auto;
 }
 #section3 {
-	background-color: #ff9624;
-	height:100vh;
+	padding:0 !important;
+	background: #14638e; /* For browsers that do not support gradients */
+	background-image:url(../imagenes/seccion-4-puntitoshead.png), url(../imagenes/seccion-4-puntitosfoot.png),-webkit-radial-gradient(#14638e, #0f4963);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	background-image:url(../imagenes/seccion-4-puntitoshead.png), url(../imagenes/seccion-4-puntitosfoot.png),-o-radial-gradient(#14638e, #0f4963);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	background-image:url(../imagenes/seccion-4-puntitoshead.png), url(../imagenes/seccion-4-puntitosfoot.png),-moz-radial-gradient(#14638e, #0f4963);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+  /* Standard syntax */
+	background-image:url(../imagenes/seccion-4-puntitoshead.png), url(../imagenes/seccion-4-puntitosfoot.png),radial-gradient(#14638e, #0f4963);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	overflow:auto;
+		overflow-x: hidden; 
 
 }
 #section4 {
-	background-color: #9bc12b;
+	background-color: #f2f2f2;
+	padding:0 !important;
+}
+
+#section5 {
+	background-color: #9c43a3;	
 	height:100vh;
 
 }
-#section5 {
-	background-color: #9c43a3;	
+#section6 {
+	background-color: #dc45a3;	
 	height:100vh;
 
 }
@@ -157,21 +180,276 @@ section {
 }
 .titulos {
 	text-align:center;
-    text-shadow: 2px 2px 4px #000000;
-	font-family:"CHANEWEI";
+	font-family:"CHALONEI";
+	font-size:72px;
+	border-bottom:thin #FFF solid;
+	text-shadow:1px 0px 5px  #000000;
+	padding-bottom:10px;
+
+}
+.tituloseccion1 {
+	text-align:center;
+	font-family:"CHALONEI";
+	font-size:72px;
+	border-bottom:thin #FFF solid;
+	text-shadow:1px 0px 5px  #000000;
+	padding-bottom:10px;
+	font-weight:900;
+}
+.portadasecc2 {
+	background-image:url(../imagenes/seccion-2-portada.png);
+	background-repeat:no-repeat;	
+}
+.seccion2foo {
+	background: #933149; /* For browsers that do not support gradients */
+	background-image:url(../imagenes/fondo-linitas-head.png), url(../imagenes/fondo-puntitos-foot.png),-webkit-radial-gradient(#c33f58, #933149);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	background-image:url(../imagenes/fondo-linitas-head.png), url(../imagenes/fondo-puntitos-foot.png),-o-radial-gradient(#c33f58, #933149);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	background-image:url(../imagenes/fondo-linitas-head.png), url(../imagenes/fondo-puntitos-foot.png),-moz-radial-gradient(#c33f58, #933149);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+  /* Standard syntax */
+	background-image:url(../imagenes/fondo-linitas-head.png), url(../imagenes/fondo-puntitos-foot.png),radial-gradient(#c33f58, #933149);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat;
+	overflow:auto;
+	padding-bottom:35px;
+	}
+.btncenter {
+	text-align:center;
+}
+.btnsecc2{
+	
+	background: #55a89c !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #55a89c 0%, #46766f 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #55a89c 0%, #46766f 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #55a89c 0%,#46766f 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:20px 60px !important;
+}
+.btnsecc2p {
+	font-family:"CHALONEI" !important;
+	font-size:18px !important;
+	margin:0px !important;
+	letter-spacing:1.7px;
+	
+}
+.btnsecc2:hover{
+	color:#d8d8d8 !important;
+}
+.btnsecc3_1 {
+	margin:0 !important;
+	background: #faae3a !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #faae3a 0%, #bc682f 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #faae3a 0%, #bc682f 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #faae3a 0%,#bc682f 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	border-radius:3px;
+	padding:15px 30px !important;	
+	font-family:"CHALONEI" !important;
+	font-size:18px !important;
+	margin:0px !important;
+	letter-spacing:1.7px;
+	white-space: normal !important;	
+}
+.btnsecc3_1:hover{
+	color:#d8d8d8 !important;
+}
+.btnsecc3_1 {
+	margin:0 !important;
+	
+}
+.btnsecc3_wraper {
+	margin: 0 auto;
+    text-align: center;
+	padding:0 60px;
+}
+.btnsecc3_2{
+	background: #faae3a !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #faae3a 0%, #bc682f 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #faae3a 0%, #bc682f 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #faae3a 0%,#bc682f 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	border-radius:3px;
+	padding:10px 0;	
+	font-family:"CHALONEI" !important;
+	font-size:15px !important;
+	margin:0px !important;
+	letter-spacing:1.7px;
+	white-space: normal !important;
+}
+
+.btnsecc3_2:hover{
+	color:#d8d8d8 !important;
+}
+.btnsecc3edi{
+	
+	background: #378fcb !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #0259b1 0%, #378fcb 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0259b1 0%, #378fcb 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0259b1 0%,#378fcb 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:20px 60px !important;
+	margin:35px 0 !important;
+}
+.btnsecc3edip {
+	font-family:"CHALONEI" !important;
+	font-size:18px !important;
+	margin:0px !important;
+	letter-spacing:1.7px;
+	
+}
+.btnsecc3edi:hover{
+	color:#d8d8d8 !important;
+}
+.editoriallegis {
+	background-color:#f2f2f2;
+	clear:both;
+	overflow:auto;
+	padding-bottom:35px;
+		overflow-x: hidden; 
+
+}
+.imgeditoriallegis{
+	padding:65px 75px 20px;
+	margin: 0 auto;
+}
+.txteditoriallegis{
+	color:#4d4d4d;
+	font-family: "CHALONEI";
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 0.7px;
+    margin-bottom: 0px !important;
+    padding: 0 75px 15px;
+	
+}
+.subtitulointsecc3{
+	max-width:100%;
+	padding:70px 75px 35px;
+}
+.transactivaycodigo{
+	padding-bottom:50px;
+}
+.btnsecc3p {
+	font-family:"CHALONEI" !important;
+	font-size:18px !important;
+	margin:0px !important;
+	letter-spacing:1.7px;
+}
+.btnsecc3:hover{
+	color:#d8d8d8 !important;
 }
 .titulos1 {
 	text-align:center;
-    text-shadow: 2px 2px 4px #000000;
+	text-shadow:1px 0px 5px  #000000;
 	text-align:center; 
 	margin: 0 auto; 
 	font-size:150px; 
 	color:white;
 	font-family:"CHANEWEI";
+}
+.tituloseccion2 {
+	text-align:center;
+	font-family:"CHALONEI";
+	font-size:72px;
+	text-shadow:1px 0px 5px  #000000;
+	padding-bottom:10px;
+	padding-top:100px;
+	font-weight:900;
+}
+.portadasecc3 {
+	
+}
+.fondoportadasecc4 {
+	background-image:url(../imagenes/seccion-3-fondo_portada.png);
+	background-repeat:no-repeat;
+}
+.secc3numero {
+	margin:0 auto;	
+}
+.textossecc4 {
+	font-family: "CHALONEI";
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 50px;
+    padding: 0 45px 85px 45px;
+    letter-spacing: 0.7px;
+    margin:190px 0 0px 0 !important;
+	font-weight:700;
+	text-shadow: 1px 0px 5px  #000000;	
+	
+}
+.textossecc4_2 {
+	text-align:center;
+	font-family: "CHALONEI";
+    font-size: 23px;
+	line-height: 1.6;
+	letter-spacing: 0.7px;
+	font-weight:900;
+}
+.textossecc4_3 {
+	text-align:right;
+	font-family: "CHALONEI";
+    font-size: 17px;
+	line-height: 1.6;
+	letter-spacing: 0.7px;
+	margin: 100px 25px 0px;
+}
+.tituloseccion4 {
+	text-align:center;
+	font-family:"CHALONEI";
+	font-size:72px;
+	text-shadow:1px 0px 5px  #000000;
+	padding:55px 0;
+	font-weight:900;
+}
+.tituloseccion4_1 {
+	color:#4d4d4d;
+	text-align:center;
+	font-family:"CHALONEI";
+	font-size:72px;
+	text-shadow:1px 0px 5px  #000000;
+	padding:75px 0 20px 0;
+	font-weight:900;
+}
+.subtitulosecc2{
+	text-align:center;
+	font-family:"CHALONEI";
+	font-size:35px;
+	padding-top:110px;
+	font-weight:900;
+	text-shadow:1px 0px 5px  #000000;
 
 }
+.subtitulossecc1div {
+	display: table;
+	width: 100%;
+	margin-top:35px;
+	padding: 0 35px;
+}
+.subtitulosseccion1 {
+	margin:50px auto 25px auto;
+	background-color:#f2f2f2;
+	font-family:"CHALONEI";
+	color:#4d4d4d;
+	font-size:20px;
+	width:470px;
+	height:90px;
+	text-align:center;
+	border-radius:15px;
+	vertical-align:middle;
+	display:table-cell;
+	font-weight:600;
+    padding: 0 15px;
+}
 .titulos2 {
-    text-shadow: 2px 2px 6px #000000;
+	text-shadow:-2px -2px 5px  #000000;
 	text-align:center; 
 	margin: 0 auto; 
 	font-size:120px; 
@@ -180,7 +458,7 @@ section {
 
 }
 .titulos3 {
-    text-shadow: 2px 2px 6px #000000;
+	text-shadow:-2px -2px 5px  #000000;
 	text-align:center; 
 	margin: 0 auto; 
 	font-size:70px; 
@@ -189,45 +467,112 @@ section {
 }
 .titulos4 {
 	text-align:center;
-    text-shadow: 2px 2px 6px #000000;
+	text-shadow:-2px -2px 5px  #000000;
 	font-size:50px; 
 	color:white;
 	background-color:#00bcd4;
 	opacity:0.7;
 	font-family:"CHANEWEI";
 }
-.textocarouselcontrast{
-	background-color:white;
-	color:#0268c2;
-	
+.textosseccion1 {
+	font-family:"CHALONEI";
+	font-size:23px;
+	text-align:justify;
+	line-height:1.6;
+	margin-top:15px;
+	padding:0 45px 0 45px;
+	letter-spacing:0.2px;
 }
-.cuadrosdetextos {
-	padding:15px 0px 5px 0px;
+.textosseccion3 {
+	font-family: "CHALONEI";
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 0.7px;
+    margin-bottom: 0px !important;
+	padding:0 75px 15px;
 }
-#textosinstitucional {
-	background-color:#00a59d;
-	border-radius:10px;
+.funcionesdeareascol {
 }
-#textosinstitucional:hover {
-	background-color:#3cb5b1;
-	-webkit-transform: scale(1.1);
-    transform: scale(1.03);
+.funcionesdeareas {
+	    margin-bottom: 70px;
 }
-.hvr-border-fade {
-	-webkit-transform: perspective(1px) translateZ(0);
-	ransform: perspective(1px) translateZ(0);
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: box-shadow;
-	transition-property: box-shadow;
-	box-shadow: inset 0 0 0 4px #00a59d, 0 0 1px transparent;
-  /* Hack to improve aliasing on mobile/tablet devices */
+.textosseccion2 {
+	font-family:"CHALONEI";
+	font-size:23px;
+	text-align:justify;
+	line-height:1.6;
+	margin-top:50px;
+	padding:0 45px 85px 45px;
+	letter-spacing:0.7px;
+	margin-bottom:0px !important;
 }
-.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
-	box-shadow: inset 0 0 0 4px white, 0 0 1px transparent;
-  /* Hack to improve aliasing on mobile/tablet devices */
+.textosseccion2doble {
+	    padding: 0 82px 85px 82px;
 }
+
+.botones-seccion1 {
+	margin:0 auto;	
 }
+.letter-spacing {
+	letter-spacing:1.5px;
+}
+.lineaspunteadas {
+/*	width:497px;*/
+	margin:0 auto;
+}
+.dialogando {
+	background-color:#fff;
+}
+.btnmivto {
+	background: #55a89c !important; /* Old browsers */
+	background: -moz-linear-gradient(#98288d 0%, #70206c 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(#98288d 0%, #70206c 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: radial-radial(#98288d 0%,#70206c 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:20px 60px !important;
+	margin:60px 0 !important;
+}
+.btnmivto:hover {
+	color:#d8d8d8 !important;
+
+}
+.enlaciudadvotas{
+	overflow:auto;
+	background-image:url(../imagenes/seccion-3-fondo-enlaciudadvotas.png);
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+}
+.datosenlaciudavotas {
+	padding:10px 0 150px;
+}
+.datosenlaciudavotas_1 {
+	padding:35px 0 0px;
+}
+.logos{
+	margin:0 auto;
+	padding:50px 0;	
+}
+.imgcenter {
+	display:block; 
+	margin: 0 auto
+}
+#tallerpc {
+	background: -moz-radial-gradient(#684f23 0%, #997536 100%) !important; /* FF3.6-15 */
+	background: -webkit-radial-gradient( #684f23 0%, #997536 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(#cb9c3d 0%,#997536 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:0 !important;
+	overflow:auto !important;
+}
+.align-right {
+	text-align:right;
+	color:#808080;
+	font-family:"CHALONEI";
+	font-size:17px;
+	padding-right:140px;
+}
+
 .carousel-content {
     display:flex;
     align-items:center;
@@ -248,7 +593,7 @@ section {
 	margin:10px 0px !important;
 }
 .parallax-window {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .navbar-brand {
 	font-family:"CHANEWEI";
@@ -301,6 +646,10 @@ and (max-device-width : 480px) {
 	background-color:#00bcd4;
 	opacity:0.7;
 }
+.funcionesdeareas {
+	height:100%;
+}
+
 .parallax-window {
 	display:none;
 }
@@ -309,6 +658,16 @@ and (max-device-width : 480px) {
 }
 .logo {
 	margin-left:5px;
+}
+.botones-seccion1 {
+	width:100%;
+}
+.lineaspunteadas {
+	width:100%;
+}
+.textosseccion1 {
+	font-size:15px;
+	text-align:center;
 }
 }
 /* Smartphones (landscape) ----------- */
@@ -374,6 +733,15 @@ section {
 .logo {
 	margin-left:5px;
 }
+.funcionesdeareas {
+	height:100%;
+}
+.botones-seccion1 {
+	width:100%;
+}
+.lineaspunteadas {
+	width:100%;
+}}
 @media only screen 
 and (max-width : 560px) {
 /* Styles */
@@ -431,6 +799,45 @@ section {
 .logo {
 	margin-left:5px;
 }
+.funcionesdeareas {
+	height:100%;
+
+}
+.botones-seccion1 {
+	width:100%;
+}
+.lineaspunteadas {
+	width:100%;
+}
+.textosseccion1 {
+	font-size:15px;
+	text-align:center;
+}
+.tituloseccion1 {
+	font-size:25px;
+	line-height:23px;
+}
+.textosseccion2 {
+		font-size:15px;
+	text-align:center;
+	padding-top: 0px;
+    margin-top: 5px;
+    line-height: 23px;
+	padding-bottom:20px;
+}
+
+.tituloseccion2 {
+	font-size:25px;
+	padding-top:15px;
+}
+.dialogando-logo {
+	padding-left:7px;
+	padding-right:7px;
+}
+.align-right {
+	padding:3px;
+	text-align:left;
+}
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
@@ -470,6 +877,13 @@ and (min-width : 1224px) {
 and (min-width : 1824px) {
 /* Styles */
 }
+@media only screen 
+and (min-width : 1355px) {
+/* Styles */
+.secc3numero {
+	width:35px;}
+}
+
 /* iPhone 4 ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
