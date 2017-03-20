@@ -4,8 +4,28 @@ body {
 	overflow-x: hidden; 
 	width:100%
 }
+p {
+	/*word-break: break-all;*/
+  overflow-wrap: normal;
+  word-wrap: normal;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens:auto;
+  text-overflow: ellipsis;
+  
+}
+a {
+	color:#FFF !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+color: #9d9d9d !important;	
+}
+.navbar-inverse .navbar-brand  {
+	color: #9d9d9d !important;	
+}
 .overflowWrap {
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 .nav li i {
 	display:none;
@@ -274,7 +294,7 @@ section {
 	background: linear-gradient(to bottom, #faae3a 0%,#bc682f 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border:none !important;
 	border-radius:3px;
-	padding:10px 0;	
+	padding:15px;	
 	font-family:"CHALONEI" !important;
 	font-size:15px !important;
 	margin:0px !important;
@@ -524,8 +544,32 @@ section {
 .dialogando {
 	background-color:#fff;
 }
+.videoWrapper {
+	padding:75px 0px;
+}
+.btnsecc2_1 {
+		
+	background: #ec5175 !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #ec5175 0%, #e65a68 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ec5175 0%, #e65a68 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ec5175 0%,#e65a68 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border:none !important;
+	padding:20px 60px !important;
+	margin-bottom: 50px !important;
+}
+.btnsecc2_1:hover{
+	color:#d8d8d8 !important;
+}
+.videoWrapper iframe {
+	border-top-width: 2pt;
+    border-right-width: 2pt;
+    border-bottom-width: 2pt;
+    border-left-width: 2pt;
+	border-style:solid;
+	border-color:#c63470;
+}
 .btnmivto {
-	background: #55a89c !important; /* Old browsers */
+	background: #98288d !important; /* Old browsers */
 	background: -moz-linear-gradient(#98288d 0%, #70206c 100%) !important; /* FF3.6-15 */
 	background: -webkit-linear-gradient(#98288d 0%, #70206c 100%) !important; /* Chrome10-25,Safari5.1-6 */
 	background: radial-radial(#98288d 0%,#70206c 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -598,6 +642,9 @@ section {
 .navbar-brand {
 	font-family:"CHANEWEI";
 }
+.modal-dialog {
+	width:60% !important;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -667,7 +714,6 @@ and (max-device-width : 480px) {
 }
 .textosseccion1 {
 	font-size:15px;
-	text-align:center;
 }
 }
 /* Smartphones (landscape) ----------- */
@@ -695,7 +741,6 @@ section {
 	height: 100%;	 
 }
 .titulos1 {
-	text-align:center;
     text-shadow: 2px 2px 4px #000000;
 	text-align:center; 
 	margin: 0 auto; 
@@ -717,7 +762,6 @@ section {
 	color:white;
 }
 .titulos4 {
-	text-align:center;
     text-shadow: 2px 2px 6px #000000;
 	font-size:15px; 
 	color:white;
@@ -741,7 +785,13 @@ section {
 }
 .lineaspunteadas {
 	width:100%;
-}}
+}
+.modal-dialog {
+	margin-top:50% !important;
+	width:95% !important;
+}
+
+}
 @media only screen 
 and (max-width : 560px) {
 /* Styles */
@@ -761,12 +811,12 @@ section {
     display: inline;
 }
 .titulos1 {
-	text-align:center;
     text-shadow: 2px 2px 4px #000000;
 	text-align:center; 
 	margin: 0 auto; 
 	font-size:50px; 
 	color:white;
+    padding: 0 5px;
 }
 .titulos2 {
     text-shadow: 2px 2px 6px #000000;
@@ -774,6 +824,7 @@ section {
 	margin: 0 auto; 
 	font-size:30px; 
 	color:white;
+    padding: 0 5px;
 }
 .titulos3 {
     text-shadow: 2px 2px 6px #000000;
@@ -781,14 +832,49 @@ section {
 	margin: 0 auto; 
 	font-size:20px; 
 	color:white;
+	padding: 0 5px;
 }
 .titulos4 {
-	text-align:center;
     text-shadow: 2px 2px 6px #000000;
 	font-size:15px; 
 	color:white;
 	background-color:#00bcd4;
 	opacity:0.7;
+	padding: 0 5px;
+}
+.tituloseccion4_1 {
+		font-size: 25px;
+    padding: 25px 5px 0px;
+	text-shadow:none;
+}
+.btnsecc3edi_1 {
+margin-top: -60px !important;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+
+	letter-spacing:2px;
+}
+.subtitulosecc2{
+	padding-top:25px;
+}
+
+.textossecc4_3 {
+	margin: 15px 25px 0px;
+}
+.datosenlaciudavotas{
+	padding:10px 0 20px;
+}
+.btnsecc2 {
+	padding: 20px 30px !important;
+}
+.btnmivto  {
+	white-space:normal !important;
+}
+.logos {
+	padding: 50px 100px;	
+}
+.textossecc4 {
+		padding: 0 5px;
 }
 .parallax-window {
 	display:none;
@@ -811,21 +897,35 @@ section {
 }
 .textosseccion1 {
 	font-size:15px;
-	text-align:center;
+	padding: 0 5px;
 }
 .tituloseccion1 {
 	font-size:25px;
 	line-height:23px;
 }
 .textosseccion2 {
-		font-size:15px;
-	text-align:center;
+	font-size:15px;
 	padding-top: 0px;
     margin-top: 5px;
     line-height: 23px;
-	padding-bottom:20px;
+	padding: 0 5px 20px;
 }
-
+.textosseccion3 {
+		padding: 0 5px;
+}
+.subtitulointsecc3{
+	padding:15px 5px 35px;
+}
+.imgeditoriallegis {
+	padding:65px 5px 20px;
+}
+.txteditoriallegis {
+	padding:0 5px 15px	
+}
+.tituloseccion4{
+    font-size: 25px;
+    padding-top: 15px;
+	}
 .tituloseccion2 {
 	font-size:25px;
 	padding-top:15px;
@@ -834,10 +934,27 @@ section {
 	padding-left:7px;
 	padding-right:7px;
 }
+
 .align-right {
 	padding:3px;
 	text-align:left;
 }
+.navbar-inverse .navbar-nav>li>a {
+	text-align:left;
+	float:left;
+}
+.videoWrapper {
+	margin: 0px 15px;
+}
+.videoWrapper iframe {
+	height: auto;
+    width: auto;
+}
+.modal-dialog {
+	margin-top:50% !important;
+	width:95% !important;
+}
+
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
