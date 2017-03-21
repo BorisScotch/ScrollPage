@@ -719,6 +719,12 @@ and (max-device-width : 480px) {
 .textosseccion1 {
 	font-size:15px;
 }
+.textosseccion3{
+	font-size: 15px;
+    margin-top: 5px;
+    line-height: 23px;
+    padding: 0 5px 20px;
+}
 }
 /* Smartphones (landscape) ----------- */
 @media only screen 
@@ -794,10 +800,27 @@ section {
 	margin-top:50% !important;
 	width:95% !important;
 }
-
+.textosseccion3{
+	font-size: 15px;
+    margin-top: 5px;
+    line-height: 23px;
+    padding: 0 5px 20px;
+}
 }
 @media only screen 
-and (max-width : 560px) {
+and (max-width : 1281px) {
+#section1 { 
+	background-color: red !important;
+}
+.navbar-brand { 
+	    font-size: 17px !important;
+}
+.nav>li>a {
+	padding: 15px 10px !important;
+}
+}
+@media only screen 
+and (max-width : 797px) {
 /* Styles */
 .navbar-brand { 
 	display:none;
@@ -821,6 +844,12 @@ section {
 	font-size:50px; 
 	color:white;
     padding: 0 5px;
+}
+.subtitulossecc1div {
+	padding:0px !important;
+}
+.funcionesdeareas {
+	margin-bottom: 10px;
 }
 .titulos2 {
     text-shadow: 2px 2px 6px #000000;
@@ -863,7 +892,8 @@ margin-top: -60px !important;
 }
 
 .textossecc4_3 {
-	margin: 15px 25px 0px;
+	font-size: 12px;
+	margin: 15px 20px 10px;
 }
 .datosenlaciudavotas{
 	padding:10px 0 20px;
@@ -873,12 +903,26 @@ margin-top: -60px !important;
 }
 .btnmivto  {
 	white-space:normal !important;
+	margin: 30px 0 !important;
+	padding: 20px 30px !important;
+}
+.seccion-3-cartel {
+	margin-bottom:10px;
+}
+.secc3numero {
+	padding: 0px 25px;
 }
 .logos {
 	padding: 50px 100px;	
 }
 .textossecc4 {
-		padding: 0 5px;
+	font-size: 15px;
+	 margin-top: 5px;
+    line-height: 23px;
+	padding: 0 25px 20px;
+}
+.textossecc4_2{
+	font-size: 12px;
 }
 .parallax-window {
 	display:none;
@@ -912,19 +956,27 @@ margin-top: -60px !important;
 	padding-top: 0px;
     margin-top: 5px;
     line-height: 23px;
-	padding: 0 5px 20px;
+	padding: 0 25px 20px;
 }
 .textosseccion3 {
-		padding: 0 5px;
+	font-size: 15px;
+    
+    margin-top: 5px;
+    line-height: 23px;
+    padding: 0 10px 20px;
 }
 .subtitulointsecc3{
 	padding:15px 5px 35px;
 }
 .imgeditoriallegis {
-	padding:65px 5px 20px;
+	padding:30px 5px 20px;
 }
+
 .txteditoriallegis {
-	padding:0 5px 15px	
+	font-size: 15px;
+	 margin-top: 5px;
+    line-height: 23px;
+	padding: 0 10px 20px;
 }
 .tituloseccion4{
     font-size: 25px;
@@ -949,6 +1001,7 @@ margin-top: -60px !important;
 }
 .videoWrapper {
 	margin: 0px 15px;
+	padding: 35px 0px;
 }
 .videoWrapper iframe {
 	height: auto;
@@ -958,16 +1011,32 @@ margin-top: -60px !important;
 	margin-top:50% !important;
 	width:95% !important;
 }
-
+.btnsecc2p {
+font-size: 12px !important;
+}
+.btnsecc3p {
+	font-size: 12px !important;
+}
+.btnsecc3_2 {
+	font-size: 12px !important;
+}
+.btnsecc3edi {
+    padding: 12px 20px !important;
+	margin: 15px 0 !important;
+}
+.btnsecc3edip{
+	font-size: 12px !important;	
+}
+.cancelpullright {
+margin: 0 auto !important;
+}
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-section {
-	height: 100%;	 
-}
+
 }
 /* iPads (landscape) ----------- */
 @media only screen 
