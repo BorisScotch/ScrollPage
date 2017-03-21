@@ -4,12 +4,10 @@
 <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 <script>
       window.sr = ScrollReveal();
-    </script>
+</script>
 <meta charset="utf-8">
 <link rel="icon" type="image/png" href="http://disfrutemosba.buenosaires.gob.ar/static/favicon.png">
 <title>Anuario</title>
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Anuario oficial del la Subsecretaria de Reforma Política y Asuntos Legislativos del Gobierno de la Ciudad de Buenos Aires, Argentina. Información general, misión, estadisticas.">
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
@@ -21,41 +19,28 @@
 <script src="JS/parallax.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/e379886307.js"></script>
-
 <!-- <script src="JS/scrollhandler.js"></script>-->
-
-
 </head> 
 <script>
 $(function() {
-
     var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
     $fluidEl = $("figure");
-
 	$allVideos.each(function() {
-
 	  $(this)
 	    // jQuery .data does not work on object/embed elements
 	    .attr('data-aspectRatio', this.height / this.width)
 	    .removeAttr('height')
 	    .removeAttr('width');
-
 	});
-
 	$(window).resize(function() {
-
 	  var newWidth = $fluidEl.width();
 	  $allVideos.each(function() {
-
 	    var $el = $(this);
 	    $el
 	        .width(newWidth)
 	        .height(newWidth * $el.attr('data-aspectRatio'));
-
 	  });
-
 	}).resize();
-
 });
 </script>
 <script>
@@ -71,7 +56,6 @@ $(document).ready(function(){
     });    
 });
 </script>
-
 <script>
  $(function() {
     $('.nav a').on('click', function(){ 
@@ -98,7 +82,6 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 1000, function(){
-   
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -106,272 +89,269 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+$(window).on('resize', function(){
+      var win = $(this);
+      if (win.width() < '767') { 
 
+      $('ul').addClass('pull-left');
+
+      }
+   
+	});
+   
+</script>
 <body>
 <div class="overflowWrap"><!-- data-spy="scroll" data-target=".navbar" data-offset="50"-->
 <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button><img class="pull-left logo" src="http://disfrutemosba.buenosaires.gob.ar/static/css/ba-header.png"/>
-      <a class="navbar-brand" href="#home">Subsecretaría de Reforma Política y Asuntos Legislativos 
-</a>
-    </div>
-    <div id="sidebar">
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav pull-right">
-          <li class="home"><a href="#home"> <b>Inicio</b></a></li>
-          <li class="section1"><a href="#section1"><b>La Subse</b></a></li>
-          <li class="section2"><a href="#section2"><b>Construcción</b></a></li>
-          <li class="section3"><a href="#section3"><b>Instituciones</b></a></li>
-          <li class="section4"><a href="#section4"><b>Elegir</b></a></li>
-          <li class="section5"><a href="#section5"><b>seccion5</b></a></li> 
-          <li class="section6"><a href="#section6"><b>seccion6</b></a></li>  
-        </ul>
-         </div>
-    </div>
-  </div>
+	<div class="container-fluid">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+            <img class="pull-left logo" src="http://disfrutemosba.buenosaires.gob.ar/static/css/ba-header.png"/>
+			<a class="navbar-brand" href="#home">Subsecretaría de Reforma Política y Asuntos Legislativos</a>
+		</div>
+		<div id="sidebar">
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav pull-right cancelpullright">
+					<li class="home"><a href="#home"> <b>Inicio</b></a></li>
+					<li class="section1"><a href="#section1"><b>La Subse</b></a></li>
+					<li class="section2"><a href="#section2"><b>Construcción</b></a></li>
+					<li class="section3"><a href="#section3"><b>Instituciones</b></a></li>
+					<li class="section4"><a href="#section4"><b>Elegir</b></a></li>
+					<li class="section5"><a href="#section5"><b>seccion5</b></a></li> 
+					<li class="section6"><a href="#section6"><b>seccion6</b></a></li>  
+				</ul>
+			</div>
+		</div>
+	</div>
 </nav>    
 <!-- -----------------------------End of navbar----------------------------- -->
 <!-- -----------------------------Section home----------------------------- -->
 <section id="home" class="container-fluid active">
- 
-<div id="carousel-example" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example" data-slide-to="1"></li>
-    <li data-target="#carousel-example" data-slide-to="2"></li>
-   
-  </ol>
+	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+    		<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example" data-slide-to="1"></li>
+    		<li data-target="#carousel-example" data-slide-to="2"></li>
+		</ol>
 <script>
 $('.carousel').carousel({
     pause: "false"
 });
 </script>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="imagenes/1.jpg"/>
-     <!--  <div class="carousel-caption">
-        <h3>Opcion 1 carousel</h3>
-        <p>Texto dentro del carousel 1</p>
-      </div>-->
-    </div>
-    <div class="item">
-     <img src="imagenes/2.jpg"/>
-     <!--  <div class="carousel-caption">
-        <h3>Opcion 2 carousel</h3>
-        <p>Texto dentro del carousel 2</p>
-      </div>-->
-    </div>
-     <div class="item">
-     <img src="imagenes/3.jpg"/>
-     <!--  <div class="carousel-caption">
-        <h3>Opcion 3 carousel</h3>
-        <p>Texto dentro del carousel 2</p>
-      </div>-->
-    </div>
-   
-  </div>
-
-  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> 
-  
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="imagenes/1.jpg"/>
+     <!--  	<div class="carousel-caption">
+        		<h3>Opcion 1 carousel</h3>
+        		<p>Texto dentro del carousel 1</p>
+			</div>-->
+    	</div>
+    	<div class="item">
+			<img src="imagenes/2.jpg"/>
+     <!--   <div class="carousel-caption">
+        		<h3>Opcion 2 carousel</h3>
+        		<p>Texto dentro del carousel 2</p>
+      		</div>-->
+		</div>
+		<div class="item">
+			<img src="imagenes/3.jpg"/>
+     <!--   <div class="carousel-caption">
+        		<h3>Opcion 3 carousel</h3>
+		        <p>Texto dentro del carousel 2</p>
+      		</div>-->
+		</div>
+		<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    		<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div> 
 </section>
-
 <!-- -----------------------------END Section home----------------------------- -->
 <!-- -----------------------------Section 1----------------------------- -->
 <img class="img-responsive" src="imagenes/seccion-1-imagen_1.png" />
 <section id="section1" class="container-fluid">
- 
-  
-<div>
-	<p class="tituloseccion1">“Trabajamos por la <strong>democracia y la transparencia</strong>”</p>
-</div>
- <div class="funcionesdeareascol">
-<div class="col-md-12">
-	<p class="textosseccion1">La base del equilibrio entre los poderes es la buena comunicación; nuestra misión es promover el vínculo entre la Legislatura de la Ciudad de Buenos Aires y el Poder Ejecutivo. Impulsamos la transparencia y el acceso a la información pública, porque sabemos que los ciudadanos son los dueños de la información y los titulares de la democracia.</p>
-	<p class="textosseccion1" style="margin-top:15px;"><strong>Subsecretaría de Reforma Política y Asuntos Legislativos</strong></p>
-</div>
-<div class="col-md-4 col-sm-12 col-xs-12 fooleft">
-	<div class="subtitulossecc1div">
-    	<p class="subtitulosseccion1">Dir. Gral. de Asuntos Legislativos</p>
-	</div>
 	<div>
-		<div class="funcionesdeareas"><p class="textosseccion1 letter-spacing">Para construir consensos y aprobar leyes eficaces, el diálogo entre el Poder Ejecutivo y el Legislativo  debe ser regular y constante.</p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-		<div class="funcionesdeareas"><p class="textosseccion1">En la DGALE nos ocupamos de  las relaciones institucionales entre las distintas áreas del Gobierno y de la Legislatura de la CABA.</p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-                <div class="botones-seccion1">
-        	<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-1.png" /></a>
-        </div>
-
+		<p class="tituloseccion1">“Trabajamos por la <strong>democracia y la transparencia</strong>”</p>
+	</div>
+	<div class="funcionesdeareascol">
+		<div class="col-md-12">
+			<p class="textosseccion1">La base del equilibrio entre los poderes es la buena comunicación; nuestra misión es promover el vínculo entre la Legislatura de la Ciudad de Buenos Aires y el Poder Ejecutivo. Impulsamos la transparencia y el acceso a la información pública, porque sabemos que los ciudadanos son los dueños de la información y los titulares de la democracia.</p>
+			<p class="textosseccion1" style="margin-top:15px;"><strong>Subsecretaría de Reforma Política y Asuntos Legislativos</strong></p>
+		</div>
+		<div class="col-md-4 col-sm-12 col-xs-12 fooleft">
+			<div class="subtitulossecc1div">
+    			<p class="subtitulosseccion1">Dir. Gral. de Asuntos Legislativos</p>
+			</div>
+			<div>
+				<div class="funcionesdeareas"><p class="textosseccion1 letter-spacing">Para construir consensos y aprobar leyes eficaces, el diálogo entre el Poder Ejecutivo y el Legislativo  debe ser regular y constante.</p>
+            	</div>
+				<div class="lineaspunteadas">
+        			<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+				</div>
+			<div class="funcionesdeareas"><p class="textosseccion1">En la DGALE nos ocupamos de  las relaciones institucionales entre las distintas áreas del Gobierno y de la Legislatura de la CABA.</p>
+        	</div>
+        	<div class="lineaspunteadas">
+        		<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+        	</div>
+			<div class="botones-seccion1">
+      	  	<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-1.png" /></a>
+    	    </div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12 col-xs-12 fooopacity">
+		<div class="subtitulossecc1div">
+    		<p class="subtitulosseccion1">Dir. Gral. de Reforma Política y Electoral </p>
+    	</div>
+    	<div>
+			<div class="funcionesdeareas"><p class="textosseccion1">La base de la democracia es la confianza de los ciudadanos; la certidumbre de que existen las condiciones necesarias para la competencia, la igualdad y la transparencia.</p>
+        	</div>
+			<div class="lineaspunteadas">
+        		<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+	        </div>
+			<div class="funcionesdeareas"><p class="textosseccion1">En DGRPOLYE desarrollamos iniciativas orientadas a fortalecer la institucionalidad electoral de la Ciudad y la formación, en materia cívica y electoral. </p>
+        	</div>
+        	<div class="lineaspunteadas">
+        		<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+			</div>
+        	<div class="botones-seccion1">
+        		<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-2.png" /></a>
+        	</div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12 col-xs-12 fooright">
+		<div class="subtitulossecc1div">
+    		<p class="subtitulosseccion1">Dir. Gral. de Seguimiento de Organismos de Control y Acceso a la Información </p>
+    	</div>
+    	<div>
+			<div class="funcionesdeareas"><p class="textosseccion1">Desde DGSOCAI coordinamos las relaciones con los Organismos de Control y tramitamos las solicitudes de acceso a la información pública.</p>
+            </div>
+        	<div class="lineaspunteadas">
+        		<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+        	</div>
+			<div class="funcionesdeareas"><p class="textosseccion1">Fomentamos iniciativas de Transparencia  con todas las áreas de Gobierno y acciones tendientes a difundir y acercar este derecho de acceso a todos los ciudadanos.</p>
+            </div>
+        	<div class="lineaspunteadas">
+        		<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
+        	</div>
+        	<div class="botones-seccion1">
+        		<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-3.png" /></a>
+        	</div>
+		</div>
 	</div>
 </div>
-<div class="col-md-4 col-sm-12 col-xs-12 fooopacity">
-	<div class="subtitulossecc1div">
-    	<p class="subtitulosseccion1">Dir. Gral. de Reforma Política y Electoral </p>
-    </div>
-    <div>
-		<div class="funcionesdeareas"><p class="textosseccion1">La base de la democracia es la confianza de los ciudadanos; la certidumbre de que existen las condiciones necesarias para la competencia, la igualdad y la transparencia.</p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-		<div class="funcionesdeareas"><p class="textosseccion1">En DGRPOLYE desarrollamos iniciativas orientadas a fortalecer la institucionalidad electoral de la Ciudad y la formación, en materia cívica y electoral. </p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-                <div class="botones-seccion1">
-        	<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-2.png" /></a>
-        </div>
-
-	</div>
-</div>
-<div class="col-md-4 col-sm-12 col-xs-12 fooright">
-	<div class="subtitulossecc1div">
-    	<p class="subtitulosseccion1">Dir. Gral. de Seguimiento de Organismos de Control y Acceso a la Información </p>
-    </div>
-    <div>
-		<div class="funcionesdeareas"><p class="textosseccion1">Desde DGSOCAI coordinamos las relaciones con los Organismos de Control y tramitamos las solicitudes de acceso a la información pública.</p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-		<div class="funcionesdeareas"><p class="textosseccion1">Fomentamos iniciativas de Transparencia  con todas las áreas de Gobierno y acciones tendientes a difundir y acercar este derecho de acceso a todos los ciudadanos.</p></div>
-        <div class="lineaspunteadas">
-        	<img class="img-responsive imgcenter" src="imagenes/lineaspunteadas.png" />
-        </div>
-        <div class="botones-seccion1">
-        	<a href="#"><img class="img-responsive imgcenter" src="imagenes/seccion-1-botton-3.png" /></a>
-        </div>
-	</div>
-</div>
-  </div>
 </section>
 <!-- ----------------------------------------------------------END Section 1---------------------------------------------------------- -->
-
-<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
-<p class="titulos1" style=""></p>
+<div class="parallax-window parallaxone" data-parallax="scroll">
+	<div style="height:25vh">
+    </div>
+	<p class="titulos1" style=""></p>
 </div>
 <script>
-
 $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1554.JPG'});
 </script>
 <!-- ----------------------------------------------------------Section 2---------------------------------------------------------- -->
 <section id="section2" class="container-fluid">
 	<div class="portadasecc2">
     	<p class="tituloseccion2">Construcción Colectiva</p>
-	<p class="textosseccion2">La conversación pública es un elemento central para la construcción de instituciones democráticas y de políticas sustentables. Para que tenga lugar, es necesario contar con espacios en los que sectores sociales y políticos y los individuos con perspectivas diversas expongan disensos y construyan consensos. Desde la Subsecretaría, desarrollamos la plataforma Dialogando BA, para  obtener insumos de los distintos sectores involucrados, con el fin de lograr una normativa incluyente e  identificar los puntos de disenso, para  traerlos a la mesa, en un ambiente  donde se puedan dialogar abiertamente.  </p>
+		<p class="textosseccion2">La conversación pública es un elemento central para la construcción de instituciones democráticas y de políticas sustentables. Para que tenga lugar, es necesario contar con espacios en los que sectores sociales y políticos y los individuos con perspectivas diversas expongan disensos y construyan consensos. Desde la Subsecretaría, desarrollamos la plataforma Dialogando BA, para  obtener insumos de los distintos sectores involucrados, con el fin de lograr una normativa incluyente e  identificar los puntos de disenso, para  traerlos a la mesa, en un ambiente  donde se puedan dialogar abiertamente.</p>
 	</div>
     <div class="dialogando">
     	<img class="img-responsive logos" src="imagenes/seccion-2-dialogandobalogo.png"/>
-       
-    
-    	<img class="img-responsive" src="imagenes/seccion-2-dialogandoba.png">
+		<img class="img-responsive" src="imagenes/seccion-2-dialogandoba.png">
         <div class="videoWrapper ">
     		<center><iframe width="1280" height="720" src="https://www.youtube.com/embed/qNL0Gq-tfUw?rel=0" frameborder="0" allowfullscreen></iframe></center>	
 		</div>
         <div class="btncenter">
-					<a id="1" data-toggle="modal" data-target="#myModal-1" data-original-title=""><div class="btnsecc2_1 btn"><p class="btnsecc2p">Ver galeria de fotos</p></div></a>
+			<a id="1" data-toggle="modal" data-target="#myModal-1" data-original-title=""><div class="btnsecc2_1 btn"><p class="btnsecc2p">Ver galeria de fotos</p></div></a>
+		</div>
+		<div id="myModal-1" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+    		<div class="modal-dialog">
+        		<div class="modal-content">
+            		<div class="modal-body">
+						<div id="carousel-example1" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example1" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example1" data-slide-to="1"></li>
+								<li data-target="#carousel-example1" data-slide-to="2"></li>
+								<li data-target="#carousel-example1" data-slide-to="3"></li>
+								<li data-target="#carousel-example1" data-slide-to="4"></li>
+								<li data-target="#carousel-example1" data-slide-to="5"></li>
+								<li data-target="#carousel-example1" data-slide-to="6"></li>
+								<li data-target="#carousel-example1" data-slide-to="7"></li>
+								<li data-target="#carousel-example1" data-slide-to="8"></li>
+								<li data-target="#carousel-example1" data-slide-to="9"></li>
+								<li data-target="#carousel-example1" data-slide-to="10"></li>
+								<li data-target="#carousel-example1" data-slide-to="11"></li>
+								<li data-target="#carousel-example1" data-slide-to="12"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="imagenes/seccion-2-galeria/DSC_5024.jpg"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/DSC_5051.jpg"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A0757.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1554.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1573.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1641.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1849.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1861.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1914.JPG"/>
+								</div>
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1930.JPG"/>
+								</div>  
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1959.JPG"/>
+								</div>  
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1963 (1).JPG"/>
+								</div>  
+								<div class="item">
+								<img src="imagenes/seccion-2-galeria/E67A1963.JPG"/>
+								</div>        
+  							</div>
+							<a class="left carousel-control" href="#carousel-example1" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example1" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</div>
 				</div>
-                
-                <div id="myModal-1" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-            	
-                
-                <div id="carousel-example1" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example1" data-slide-to="1"></li>
-    <li data-target="#carousel-example1" data-slide-to="2"></li>
-    <li data-target="#carousel-example1" data-slide-to="3"></li>
-    <li data-target="#carousel-example1" data-slide-to="4"></li>
-    <li data-target="#carousel-example1" data-slide-to="5"></li>
-    <li data-target="#carousel-example1" data-slide-to="6"></li>
-	<li data-target="#carousel-example1" data-slide-to="7"></li>
-    <li data-target="#carousel-example1" data-slide-to="8"></li>
-    <li data-target="#carousel-example1" data-slide-to="9"></li>
-    <li data-target="#carousel-example1" data-slide-to="10"></li>
-    <li data-target="#carousel-example1" data-slide-to="11"></li>
-    <li data-target="#carousel-example1" data-slide-to="12"></li>
-    
-  </ol>
-
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="imagenes/seccion-2-galeria/DSC_5024.jpg"/>
-    </div>
-    <div class="item">
-     <img src="imagenes/seccion-2-galeria/DSC_5051.jpg"/>
-    </div>
-     <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A0757.JPG"/>
-    </div>
-     <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1554.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1573.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1641.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1849.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1861.JPG"/>
-    </div>
-<div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1914.JPG"/>
-    </div>
-<div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1930.JPG"/>
-    </div>  
-    <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1959.JPG"/>
-    </div>  
-     <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1963 (1).JPG"/>
-    </div>  
-     <div class="item">
-     <img src="imagenes/seccion-2-galeria/E67A1963.JPG"/>
-    </div>        
-    
-  </div>
-
-  <a class="left carousel-control" href="#carousel-example1" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example1" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> 
-  
-            </div>
-        </div>
-    </div>
-</div>
+			</div>
+		</div>
     	<div class="seccion2foo overflowWrap">
 	        <div class="col-md-6 col-sm-12 col-xs-12 fooleft">
             	<p class="subtitulosecc2">Dialogando Internacional</p> 
                 <p class="textosseccion2 textosseccion2doble">El acceso a la información pública y la confianza en las instituciones son fuentes claves para la legitimidad democrática. En nuestra región, las debilidades en estos temas pueden ser fuentes de inestabilidad política. Para cerrar el año organizamos,  en la Legislatura Porteña, un encuentro con expositores internacionales y legisladores para, conversar acerca de las tendencias globales, los mecanismos de transparencia, el diálogo y la rendición de cuentas.
 </p>              
 				<div class="btncenter">
-					<div class="btnsecc2 btn"><p class="btnsecc2p">Expositores y temas</p></div>
+					<div class="btnsecc2 btn"><p class="btnsecc2p">Expositores y temas</p>
+                    </div>
 				</div>
             </div>
    	        <div class="col-md-6 col-sm-12 col-xs-12 fooright">
@@ -379,7 +359,8 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1554.JPG'}
                 <p style="letter-spacing: 1.2px;" class="textosseccion2 textosseccion2doble">DialogandoBA es una herramienta destinada a generar una conversación pública plural y a tomar decisiones informadas en distintos  temas y con los públicos más diversos. Para aplicarla a distintos contextos, desarrollamos el Manual de DialogandoBA, que permitecompartir la experiencia de esta herramienta, para fortalecer procesos de reforma del GCBA y acompañar en la planificación  y aplicación de la metodología. 
 </p>          
 				<div class="btncenter">
-					<div class="btnsecc2 btn"><p class="btnsecc2p">Descargá el manual acá</p></div>
+					<div class="btnsecc2 btn"><p class="btnsecc2p">Descargá el manual acá</p>
+                    </div>
 				</div>     
             </div>
         </div>
@@ -403,7 +384,8 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1849.JPG'}
     	<p class="textosseccion2">Buenos Aires es pionera en acceso a la información pública: la ley 104 es una de las primeras del país. En 2016 propusimos una reforma para actualizarla, en términos de tecnología y de avance de una perspectiva de derechos. El consenso legislativo fue enorme: 54 votos a favor, sobre 57 presentes. Una normativa de acceso a la información novedosa es fundamental para poner al Estado a la vanguardia de los procesos y de su mejora, a la vez que empodera a las personas en su participación en la vida pública y en el desarrollo de la actividad privada.</p>
     </div>
     <div class="btncenter">
-		<div class="btnsecc3_1 btn"><p class="btnsecc3p">Descargá la ley sancionada</p></div>
+		<div class="btnsecc3_1 btn"><p class="btnsecc3p">Descargá la ley sancionada</p>
+        </div>
 	</div>
 	    <div class="col-md-6 col-sm-12 col-xs-12 transactivaycodigo fooleft">
     		<img  class="subtitulointsecc3 img-responsive imgcenter" src="imagenes/seccion-4-subtitulo.png" class="img-responsive">
@@ -413,7 +395,7 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1849.JPG'}
 	    <div class="col-md-6 col-sm-12 col-xs-12 transactivaycodigo fooright">
 	    	<img class="subtitulointsecc3 img-responsive imgcenter" src="imagenes/seccion-4-subtitulo_1.png" class="img-responsive">
 	        <p class="textosseccion3">Presentamos un proyecto de ley para que la Ciudad de Buenos Aires tenga su Código Electoral; un paso clave para Ciudad, que implica autonomía en materia político-electoral y el saldo de una deuda histórica.  Para ello, efectuamos un diagnóstico de las fortalezas y debilidades del sistema político-electoral y, a partir de estos insumos diversos y contradictorios, formulamos una propuesta de reforma, dirigida a la modernización y el fortalecimiento del sistema.</p>
-	        <div class="btnsecc3_wraper ">	
+	        <div class="btnsecc3_wraper">	
 				<div class="btnsecc3 col-md-6 col-sm-12 col-xs-12">
                		<p class="btnsecc3_2">Descargá el libro</p>
             	</div>
@@ -439,7 +421,6 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1849.JPG'}
         	</div>
             <img class="img-responsive" src="imagenes/seccion-4-publicaciones.png">
 		</div>
-
 </section>
 <!-- ----------------------------------------------------------END Section 3---------------------------------------------------------- -->
 <div class="parallax-window parallaxone" data-parallax="scroll">
@@ -451,138 +432,126 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A1963 (1).J
 
 <!-- ----------------------------------------------------------Section 4---------------------------------------------------------- -->
 <section id="section4" class="container-fluid">
-
- <div class="fondoportadasecc4">
+	<div class="fondoportadasecc4">
 		<div class="tituloseccion4">
     		<p>Elegir a conciencia</p>
 		</div>
         <img class="img-responsive" src="imagenes/seccion-3-portada.png"/>
 	</div>
     <div class="mivoto">
-    <img class="img-responsive logos" src="imagenes/seccion3-mivotologo.png"/>
-    <img src="imagenes/seccion-3-mivoto.png" class="img-responsive">
+    	<img class="img-responsive logos" src="imagenes/seccion3-mivotologo.png"/>
+	    <img src="imagenes/seccion-3-mivoto.png" class="img-responsive">
     	<div class="btncenter">
-    		<a id="2" data-toggle="modal" data-target="#myModal-2" data-original-title=""><div class="btnmivto btn"><p class="btnsecc2p">Galeria de fotos del programa</p></div></a>
+    		<a id="2" data-toggle="modal" data-target="#myModal-2" data-original-title="">
+            	<div class="btnmivto btn"><p class="btnsecc2p">Galeria de fotos del programa</p>
+                </div>
+			</a>
 		</div>     
-        
          <div id="myModal-2" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-            	
-                
-                <div id="carousel-example2" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example2" data-slide-to="1"></li>
-    <li data-target="#carousel-example2" data-slide-to="2"></li>
-    <li data-target="#carousel-example2" data-slide-to="3"></li>
-    <li data-target="#carousel-example2" data-slide-to="4"></li>
-    <li data-target="#carousel-example2" data-slide-to="5"></li>
-    <li data-target="#carousel-example2" data-slide-to="6"></li>
-	<li data-target="#carousel-example2" data-slide-to="7"></li>
-    <li data-target="#carousel-example2" data-slide-to="8"></li>
-    <li data-target="#carousel-example2" data-slide-to="9"></li>
-    <li data-target="#carousel-example2" data-slide-to="10"></li>
-    <li data-target="#carousel-example2" data-slide-to="11"></li>
-    <li data-target="#carousel-example2" data-slide-to="12"></li>
-    
-  </ol>
-
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="imagenes/seccion-4-galeria/E67A6044.JPG"/>
-    </div>
-    <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6074.JPG"/>
-    </div>
-     <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6080.JPG"/>
-    </div>
-     <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6113.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6156.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6156.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6167.JPG"/>
-    </div>
-      <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6178.JPG"/>
-    </div>
-<div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6187.JPG"/>
-    </div>
-<div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6219.JPG"/>
-    </div>  
-    <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A6230.JPG"/>
-    </div>  
-     <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A8394.JPG"/>
-    </div>  
-     <div class="item">
-     <img src="imagenes/seccion-4-galeria/E67A8414.JPG"/>
-    </div>        
-    
-  </div>
-
-  <a class="left carousel-control" href="#carousel-example2" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example2" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> 
-  
-            </div>
-        </div>
-    </div>
-</div>
-        
-           
-    	<img src="imagenes/seccion-3-mivotofoot.png" class="img-responsive">
-    <div id="tallerpc">
-    	<img src="imagenes/seccion-3-cartel.png" class="pull-left img-responsive">
-    	<div>
-        	<p class="textossecc4">Promueve la formación de ciudadanos informados, responsables y comprometidos a ser agentes de cambio en sus comunidades, a través de los canales de debate público y de participación en la comunidad</p>
-    	</div> 
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="carousel-example2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example2" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example2" data-slide-to="1"></li>
+								<li data-target="#carousel-example2" data-slide-to="2"></li>
+								<li data-target="#carousel-example2" data-slide-to="3"></li>
+								<li data-target="#carousel-example2" data-slide-to="4"></li>
+								<li data-target="#carousel-example2" data-slide-to="5"></li>
+								<li data-target="#carousel-example2" data-slide-to="6"></li>
+								<li data-target="#carousel-example2" data-slide-to="7"></li>
+								<li data-target="#carousel-example2" data-slide-to="8"></li>
+								<li data-target="#carousel-example2" data-slide-to="9"></li>
+								<li data-target="#carousel-example2" data-slide-to="10"></li>
+								<li data-target="#carousel-example2" data-slide-to="11"></li>
+								<li data-target="#carousel-example2" data-slide-to="12"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="imagenes/seccion-4-galeria/E67A6044.JPG"/>
+								</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6074.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6080.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6113.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6156.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6156.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6167.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6178.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6187.JPG"/>
+							</div>
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6219.JPG"/>
+							</div>  
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A6230.JPG"/>
+							</div>  
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A8394.JPG"/>
+							</div>  
+							<div class="item">
+								<img src="imagenes/seccion-4-galeria/E67A8414.JPG"/>
+							</div>        
+						</div>
+						<a class="left carousel-control" href="#carousel-example2" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example2" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+   	<img src="imagenes/seccion-3-mivotofoot.png" class="img-responsive">
+	<div id="tallerpc">
+    	<img src="imagenes/seccion-3-cartel.png" class="pull-left img-responsive seccion-3-cartel">
+			<div>
+        		<p class="textossecc4">Promueve la formación de ciudadanos informados, responsables y comprometidos a ser agentes de cambio en sus comunidades, a través de los canales de debate público y de participación en la comunidad</p>
+			</div> 
         	<img src="imagenes/seccion-3-numero.png" class="img-responsive secc3numero scale">
-        	<p class="textossecc4_2">Capacitadas en la puerba piloto</p>
-            <p class="textossecc4_3">Los datos numericos son resultados del años 2016</p>
-    </div>
-    	
+        		<p class="textossecc4_2">Capacitadas en la puerba piloto</p>
+            	<p class="textossecc4_3">Los datos numericos son resultados del años 2016</p>
+	</div>
     <div class="enlaciudadvotas">
     	<p class="tituloseccion4_1">Promoción del voto extranjero</p>
-        <img src="imagenes/seccion3-enlaciudadvotas-logo.png" class="img-responsive logos">
-        <img src="imagenes/seccion-3-enlaciudadvotas.png" class="img-responsive datosenlaciudavotas">
+	        <img src="imagenes/seccion3-enlaciudadvotas-logo.png" class="img-responsive logos">
+    	    <img src="imagenes/seccion-3-enlaciudadvotas.png" class="img-responsive datosenlaciudavotas">
     </div>
-    
-</div> 
-  
+	</div>
 </section>
 <!-- ----------------------------------------------------------END Section 4---------------------------------------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
-
+<div class="parallax-window parallaxone" data-parallax="scroll">
+	<div style="height:25vh">
+    </div>
 </div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-2-galeria/E67A0757.JPG'});
 </script>
-
 <!-- ----------------------------------------------------------Section 5---------------------------------------------------------- -->
 <section id="section5" class="container-fluid">
 
-  
-  
 </section>
 <!-- ----------------------------------------------------------END Section 5---------------------------------------------------------- -->
-<div class="parallax-window parallaxone" data-parallax="scroll"><div style="height:25vh"></div>
-
+<div class="parallax-window parallaxone" data-parallax="scroll">
+	<div style="height:25vh">
+    </div>
 </div>
 <script>
 $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-4-galeria/E67A6044.JPG'});
@@ -590,11 +559,8 @@ $('.parallaxone').parallax({imageSrc: 'imagenes/seccion-4-galeria/E67A6044.JPG'}
 <!-- ----------------------------------------------------------Section 6---------------------------------------------------------- -->
 <section id="section6" class="container-fluid">
 
- 
-  
 </section>
 <!-- ----------------------------------------------------------END Section 6---------------------------------------------------------- -->
-
 <script>
 sr.reveal('.fooleft', {
 	distance : '100px',
@@ -628,8 +594,6 @@ sr.reveal('.fooopacity',{
 	duration: 1000,
 	mobile:false,
 },75);
-
 </script>
-</body>
 </body>
 </html>
