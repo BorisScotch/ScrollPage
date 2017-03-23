@@ -95,6 +95,17 @@ color: #9d9d9d !important;
 	color: #fff; 
 	background-color: #000000;
 }
+.carousel-control {
+	top:47% !important;
+	height:100px !important;
+	width:100px !important;
+	color:#fff !important;	
+	opacity: 1 !important;
+}
+.carousel-control:hover {
+	opacity:0.7 !important;
+}
+
 section {
 	height: 100%;	
 	color: #fff;
@@ -527,7 +538,7 @@ section {
 	text-align:justify;
 	line-height:1.6;
 	margin-top:50px;
-	padding:0 45px 85px 45px;
+	padding:0px 75px 85px !important;
 	letter-spacing:0.7px;
 	margin-bottom:0px !important;
 }
@@ -822,6 +833,17 @@ and (max-width : 1281px) {
 @media only screen 
 and (max-width : 797px) {
 /* Styles */
+.carousel-control {
+	top: 35% !important;
+	height:50px !important;
+	width:50px !important;
+}
+.carousel-indicators {
+	bottom: -5px !important;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 400px !important;
+}
 .navbar-brand { 
 	display:none;
 }
@@ -919,7 +941,7 @@ margin-top: -60px !important;
 	font-size: 15px;
 	 margin-top: 5px;
     line-height: 23px;
-	padding: 0 25px 20px;
+	padding: 0 40px 20px;
 }
 .textossecc4_2{
 	font-size: 12px;
@@ -945,7 +967,7 @@ margin-top: -60px !important;
 }
 .textosseccion1 {
 	font-size:15px;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 .tituloseccion1 {
 	font-size:25px;
@@ -956,14 +978,17 @@ margin-top: -60px !important;
 	padding-top: 0px;
     margin-top: 5px;
     line-height: 23px;
-	padding: 0 25px 20px;
+	padding: 0 40px 20px !important;
 }
+.textosseccion2doble {
+	padding: 0 25px 20px !important;	
+	}
 .textosseccion3 {
 	font-size: 15px;
     
     margin-top: 5px;
     line-height: 23px;
-    padding: 0 10px 20px;
+    padding: 0 25px 20px;
 }
 .subtitulointsecc3{
 	padding:15px 5px 35px;
@@ -976,7 +1001,7 @@ margin-top: -60px !important;
 	font-size: 15px;
 	 margin-top: 5px;
     line-height: 23px;
-	padding: 0 10px 20px;
+	padding: 0 25px 20px;
 }
 .tituloseccion4{
     font-size: 25px;
